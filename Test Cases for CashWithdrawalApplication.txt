@@ -1,5 +1,14 @@
 Test cases for CashWithdrawalApplication
 
+Endpoint - http://localhost:8080/atm/withdraw
+
+Sample Request:
+{
+    "amount":500
+}
+
+Test Cases:
+
 1. Check if Amount is multiple of 10
 
 amount - 105 
