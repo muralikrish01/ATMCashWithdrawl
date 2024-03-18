@@ -1,0 +1,33 @@
+Test cases for CashWithdrawalApplication
+
+1. Check if Amount is multiple of 10
+
+amount - 105 
+result: status="error"
+
+{
+    "message": "Amount must be a multiple of 10",
+    "status": "error"
+}
+
+2. Check if minimum no. of notes are dispensed for each request
+
+amount = 100
+result: {
+    "message": "Cash withdrawn successfully",
+    "notesDispensed": {
+        "100": 1
+    },
+    "status": "success"
+}
+
+3. Check if we get Insufficient funds in the ATM for larger amount
+
+amount = 10157770
+{
+    "message": "Insufficient funds in the ATM",
+    "status": "error"
+}
+
+4. Check if notes are getting added when Insufficient funds in the ATM
+5. Check if the response for the requests made are correct
